@@ -38,7 +38,7 @@ Implements:
 - Validates input using constructor-based rules.
 
 📸 **Screenshots:**  
-![1.c](1.c.png)  
+![screenshots](1.c.png)  
 ![1.d](1.d.png)
 
 ---
