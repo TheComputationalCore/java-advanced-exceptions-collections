@@ -1,136 +1,162 @@
-# Java Advanced: Exception Handling & Collections 
+# Java Advanced: Exception Handling & Collections
 
-This repository showcases **advanced Java concepts**, focusing on **custom exceptions**, **robust error handling**, and **Java Collections Framework** usage.  
-It includes **five fully implemented tasks (Q1–Q5)** accompanied by code screenshots for clarity and reference.
+![Build Status](https://github.com/TheComputationalCore/java-advanced-exceptions-collections/actions/workflows/java-build.yml/badge.svg)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Java](https://img.shields.io/badge/Java-100%25-orange)
+![Repo Size](https://img.shields.io/github/repo-size/TheComputationalCore/java-advanced-exceptions-collections)
+
+---
+
+## 📚 Overview
+
+This repository showcases **advanced Java concepts**, focusing on:
+
+- Custom exception handling  
+- Collections framework usage  
+- Stack implementation  
+- HashMaps  
+- Array exception management  
+
+It contains **five structured tasks (Q1–Q5)**, each reinforced with code screenshots laid out in elegant grids.
+
+---
+
+## 🛠️ Tech Stack
+
+| Language | Paradigm | Topics |
+|---------|----------|--------|
+| **Java 8+** | OOP, Exception Handling | Collections, Custom Exceptions, Stack, HashMap |
 
 ---
 
 ## 📁 Project Structure
 
 ```
-├── AgeNotWithinRangeException.java     # Custom exception for invalid student age
-├── NameNotValidException.java          # Custom exception for invalid name
-├── Student.java                        # Student class using custom exceptions (Q1)
-├── Voter.java                          # Voter class with age validation (Q2)
-├── QuestionThree.java                  # Weekday array + exception handling (Q3)
-├── QuestionFour.java                   # HashMap for student grades (Q4)
-├── QuestionFive.java                   # Stack implementation using collections (Q5)
-├── Screenshots/
-│   ├── 1.a.png 1.b.png 1.c.png 1.d.png
-│   ├── 2.a.png 2.b.png
-│   ├── 3.a.png 3.b.png 3.c.png
-│   ├── 4.a.png 4.b.png 4.c.png 4.d.png
-│   └── 5.png
-└── README.md
+src/
+├── AgeNotWithinRangeException.java
+├── NameNotValidException.java
+├── Student.java
+├── Voter.java
+├── QuestionThree.java
+├── QuestionFour.java
+├── QuestionFive.java
+└── screenshots/
+    ├── 1.a.png
+    ├── 1.b.png
+    ├── 1.c.png
+    ├── 1.d.png
+    ├── 2.a.png
+    ├── 2.b.png
+    ├── 3.a.png
+    ├── 3.b.png
+    ├── 3.c.png
+    ├── 4.a.png
+    ├── 4.b.png
+    ├── 4.c.png
+    ├── 4.d.png
+    └── 5.png
 ```
 
 ---
 
-## 🧩 Task Overviews
-
-### **Q1 — Student Management System (Custom Exceptions)**  
-Implements:
-- `Student` class with:
-  - `rollNo`, `name`, `age`, `course`
-- Custom exceptions:
-  - **AgeNotWithinRangeException** → age must be between **15–21**
-  - **NameNotValidException** → name must contain only letters
-- Validates input using constructor-based rules.
-
-📸 **Screenshots:**  
-![screenshots](1.c.png)  
-![1.d](1.d.png)
+# 📝 Tasks Overview
 
 ---
 
-### **Q2 — Voter Age Validation**  
-`Voter` class validates:
-- Age must be **18 or above**
-- Throws an exception for invalid age
+# **Q1 — Student Management System (Custom Exceptions)**
 
-📸 **Screenshots:**  
-![2.a](2.a.png)  
-![2.b](2.b.png)
+### ✔ Validates:
+- Age range (15–21)
+- Name characters (no digits/symbols)
 
----
+### ✔ Custom Exceptions:
+- `AgeNotWithinRangeException`
+- `NameNotValidException`
 
-### **Q3 — Weekday Array + Exception Handling**  
-- Stores weekday names in an array (index 0 = Sunday)
-- Accepts user index input
-- Handles:
-  - **ArrayIndexOutOfBoundsException**
-  - Prints helpful error message
+### 📸 Screenshots
+| 1.a | 1.b |
+|---|---|
+| ![](screenshots/1.a.png) | ![](screenshots/1.b.png) |
 
-📸 **Screenshots:**  
-![3.a](3.a.png)  
-![3.b](3.b.png)  
-![3.c](3.c.png)
+| 1.c | 1.d |
+|---|---|
+| ![](screenshots/1.c.png) | ![](screenshots/1.d.png) |
 
 ---
 
-### **Q4 — Student Grades Using HashMap**  
-Implements:
+# **Q2 — Voter Age Validation**
+
+Throws exception if voter age < 18.
+
+### 📸 Screenshots
+| 2.a | 2.b |
+|---|---|
+| ![](screenshots/2.a.png) | ![](screenshots/2.b.png) |
+
+---
+
+# **Q3 — Weekday Array Handling**
+
+Handles `ArrayIndexOutOfBoundsException` for invalid day index.
+
+### 📸 Screenshots
+| 3.a | 3.b |
+|---|---|
+| ![](screenshots/3.a.png) | ![](screenshots/3.b.png) |
+
+| 3.c | — |
+|---|---|
+| ![](screenshots/3.c.png) |  |
+
+---
+
+# **Q4 — Student Grades with HashMap**
+
+Enables:
 - Add student + grade  
 - Remove student  
 - Display grade by name  
 
-Uses Java **HashMap** to store key–value pairs.
+### 📸 Screenshots
+| 4.a | 4.b |
+|---|---|
+| ![](screenshots/4.a.png) | ![](screenshots/4.b.png) |
 
-📸 **Screenshots:**  
-![4.a](4.a.png)  
-![4.b](4.b.png)  
-![4.c](4.c.png)  
-![4.d](4.d.png)
-
----
-
-### **Q5 — Stack Implementation Using Collections**  
-Implements:
-- `push()`
-- `pop()`
-- `isEmpty()`
-
-Built using a Java **Stack** or similar collection class.
-
-📸 **Screenshot:**  
-![5](5.png)
+| 4.c | 4.d |
+|---|---|
+| ![](screenshots/4.c.png) | ![](screenshots/4.d.png) |
 
 ---
 
-## ▶️ How to Run
+# **Q5 — Stack Implementation (Collections)**
 
-### **1. Clone the Repository**
-```bash
-git clone https://github.com/thesoulseizure/task-4.git
-cd task-4
-```
+Implements push, pop, isEmpty using Java Collections.
 
-### **2. Compile All `.java` Files**
+### 📸 Screenshot
+| 5 |
+|---|
+| ![](screenshots/5.png) |
+
+---
+
+# ▶️ How to Run
+
 ```bash
+git clone https://github.com/TheComputationalCore/java-advanced-exceptions-collections.git
+cd java-advanced-exceptions-collections
 javac *.java
+java Student        # Q1
+java Voter          # Q2
+java QuestionThree  # Q3
+java QuestionFour   # Q4
+java QuestionFive   # Q5
 ```
 
-### **3. Run Any Task**
-
-| Task | Command |
-|------|----------|
-| Q1 — Student | `java Student` |
-| Q2 — Voter | `java Voter` |
-| Q3 — Weekday Array | `java QuestionThree` |
-| Q4 — HashMap Grades | `java QuestionFour` |
-| Q5 — Stack | `java QuestionFive` |
-
 ---
 
-## 📌 Requirements
-- **JDK 8 or higher**
-- Any IDE or terminal that can compile and run Java programs
+# 📄 License
+
+Distributed under the MIT License.
 
 ---
-
-## 📄 License  
-This project is for **educational purposes** and demonstrates core Java error-handling & collections concepts.
-
----
-
 
