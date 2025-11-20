@@ -1,6 +1,6 @@
 # Java Advanced: Exception Handling & Collections
 
-<div align="center">
+
 
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
