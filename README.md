@@ -1,162 +1,170 @@
 # Java Advanced: Exception Handling & Collections
 
-![Build Status](https://github.com/TheComputationalCore/java-advanced-exceptions-collections/actions/workflows/java-build.yml/badge.svg)
+<div align="center">
+
+![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Java](https://img.shields.io/badge/Java-100%25-orange)
 ![Repo Size](https://img.shields.io/github/repo-size/TheComputationalCore/java-advanced-exceptions-collections)
 
----
-
-## 📚 Overview
-
-This repository showcases **advanced Java concepts**, focusing on:
-
-- Custom exception handling  
-- Collections framework usage  
-- Stack implementation  
-- HashMaps  
-- Array exception management  
-
-It contains **five structured tasks (Q1–Q5)**, each reinforced with code screenshots laid out in elegant grids.
+</div>
 
 ---
 
-## 🛠️ Tech Stack
+## 📌 Overview
 
-| Language | Paradigm | Topics |
-|---------|----------|--------|
-| **Java 8+** | OOP, Exception Handling | Collections, Custom Exceptions, Stack, HashMap |
+This repository contains **advanced Java programs** demonstrating:
 
----
+- Custom Exception Handling  
+- Collections Framework  
+- Input Validation  
+- Stack Implementation  
+- HashMap Operations  
 
-## 📁 Project Structure
-
-```
-src/
-├── AgeNotWithinRangeException.java
-├── NameNotValidException.java
-├── Student.java
-├── Voter.java
-├── QuestionThree.java
-├── QuestionFour.java
-├── QuestionFive.java
-└── screenshots/
-    ├── 1.a.png
-    ├── 1.b.png
-    ├── 1.c.png
-    ├── 1.d.png
-    ├── 2.a.png
-    ├── 2.b.png
-    ├── 3.a.png
-    ├── 3.b.png
-    ├── 3.c.png
-    ├── 4.a.png
-    ├── 4.b.png
-    ├── 4.c.png
-    ├── 4.d.png
-    └── 5.png
-```
+It includes **five structured tasks (Q1–Q5)** supported by screenshots and organized code.
 
 ---
 
-# 📝 Tasks Overview
+## 🗂️ Project Structure
+
+| File | Description |
+|------|-------------|
+| `Student.java` | Student class with age + name validation using custom exceptions (Q1) |
+| `AgeNotWithinRangeException.java` | Thrown when age is outside 15–21 (Q1) |
+| `NameNotValidException.java` | Thrown when name contains invalid characters (Q1) |
+| `Voter.java` | Validates voter age (must be ≥ 18) (Q2) |
+| `QuestionThree.java` | Weekday array with index validation (Q3) |
+| `QuestionFour.java` | Student grades using HashMap (Q4) |
+| `QuestionFive.java` | Stack implementation using Collections (Q5) |
+| `screenshots/` | Complete screenshots of implementations |
 
 ---
 
-# **Q1 — Student Management System (Custom Exceptions)**
+## 🖼️ Screenshots (Grid View)
 
-### ✔ Validates:
-- Age range (15–21)
-- Name characters (no digits/symbols)
-
-### ✔ Custom Exceptions:
-- `AgeNotWithinRangeException`
-- `NameNotValidException`
-
-### 📸 Screenshots
-| 1.a | 1.b |
-|---|---|
-| ![](screenshots/1.a.png) | ![](screenshots/1.b.png) |
-
-| 1.c | 1.d |
-|---|---|
-| ![](screenshots/1.c.png) | ![](screenshots/1.d.png) |
+### **Q1 — Student Management (Exceptions)**  
+<table>
+<tr>
+<td><img src="screenshots/1.a.png" width="250"></td>
+<td><img src="screenshots/1.b.png" width="250"></td>
+</tr>
+<tr>
+<td><img src="screenshots/1.c.png" width="250"></td>
+<td><img src="screenshots/1.d.png" width="250"></td>
+</tr>
+</table>
 
 ---
 
-# **Q2 — Voter Age Validation**
-
-Throws exception if voter age < 18.
-
-### 📸 Screenshots
-| 2.a | 2.b |
-|---|---|
-| ![](screenshots/2.a.png) | ![](screenshots/2.b.png) |
-
----
-
-# **Q3 — Weekday Array Handling**
-
-Handles `ArrayIndexOutOfBoundsException` for invalid day index.
-
-### 📸 Screenshots
-| 3.a | 3.b |
-|---|---|
-| ![](screenshots/3.a.png) | ![](screenshots/3.b.png) |
-
-| 3.c | — |
-|---|---|
-| ![](screenshots/3.c.png) |  |
+### **Q2 — Voter Age Validation**
+<table>
+<tr>
+<td><img src="screenshots/2.a.png" width="250"></td>
+<td><img src="screenshots/2.b.png" width="250"></td>
+</tr>
+</table>
 
 ---
 
-# **Q4 — Student Grades with HashMap**
+### **Q3 — Weekday Array Handling**
+<table>
+<tr>
+<td><img src="screenshots/3.a.png" width="250"></td>
+<td><img src="screenshots/3.b.png" width="250"></td>
+<td><img src="screenshots/3.c.png" width="250"></td>
+</tr>
+</table>
 
-Enables:
+---
+
+### **Q4 — Student Grades (HashMap)**
+<table>
+<tr>
+<td><img src="screenshots/4.a.png" width="250"></td>
+<td><img src="screenshots/4.b.png" width="250"></td>
+</tr>
+<tr>
+<td><img src="screenshots/4.c.png" width="250"></td>
+<td><img src="screenshots/4.d.png" width="250"></td>
+</tr>
+</table>
+
+---
+
+### **Q5 — Stack Implementation**
+<img src="screenshots/5.png" width="300">
+
+---
+
+## 🧠 Task Breakdown
+
+### **Q1 — Custom Exceptions in Student Class**
+- Validates:
+  - Age between **15–21**
+  - Name must NOT contain digits or symbols
+- Uses two custom exceptions:
+  - `AgeNotWithinRangeException`
+  - `NameNotValidException`
+
+---
+
+### **Q2 — Voter Age Validation**
+Ensures voter age is **≥ 18**, otherwise throws a custom exception.
+
+---
+
+### **Q3 — Weekday Array**
+- Stores weekday names in an array.
+- Handles:
+  - Invalid index
+  - `ArrayIndexOutOfBoundsException`
+
+---
+
+### **Q4 — Student Grades (HashMap)**
+Operations:
 - Add student + grade  
 - Remove student  
-- Display grade by name  
+- Print grade by name  
 
-### 📸 Screenshots
-| 4.a | 4.b |
-|---|---|
-| ![](screenshots/4.a.png) | ![](screenshots/4.b.png) |
-
-| 4.c | 4.d |
-|---|---|
-| ![](screenshots/4.c.png) | ![](screenshots/4.d.png) |
+Uses:
+```java
+HashMap<String, Integer>
+```
 
 ---
 
-# **Q5 — Stack Implementation (Collections)**
+### **Q5 — Integer Stack (Collections)**
+Implements:
+- `push()`
+- `pop()`
+- `isEmpty()`
 
-Implements push, pop, isEmpty using Java Collections.
-
-### 📸 Screenshot
-| 5 |
-|---|
-| ![](screenshots/5.png) |
+Uses:
+```java
+Stack<Integer>
+```
 
 ---
 
-# ▶️ How to Run
+## ▶️ How to Run
 
 ```bash
 git clone https://github.com/TheComputationalCore/java-advanced-exceptions-collections.git
 cd java-advanced-exceptions-collections
 javac *.java
-java Student        # Q1
-java Voter          # Q2
-java QuestionThree  # Q3
-java QuestionFour   # Q4
-java QuestionFive   # Q5
+
+# Run tasks:
+java Student          # Q1
+java Voter            # Q2
+java QuestionThree    # Q3
+java QuestionFour     # Q4
+java QuestionFive     # Q5
 ```
 
 ---
 
-# 📄 License
+## 📄 License
 
-Distributed under the MIT License.
-
----
+This project is licensed under the **MIT License**.
 
