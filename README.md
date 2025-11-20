@@ -1,76 +1,136 @@
-# Java Advanced: Exception Handling & Collections (Task 4)
+# Java Advanced: Exception Handling & Collections 
 
-This repository contains Java programs demonstrating advanced concepts such as exception handling and the use of collection classes. The project includes solutions to five tasks (Q1 to Q5) focusing on custom exceptions, array handling, HashMap operations, and stack implementation.
+This repository showcases **advanced Java concepts**, focusing on **custom exceptions**, **robust error handling**, and **Java Collections Framework** usage.  
+It includes **five fully implemented tasks (Q1–Q5)** accompanied by code screenshots for clarity and reference.
 
-## Project Structure
+---
 
-- **Student.java**: Implements the `Student` class with exception handling for age and name validation (Q1).
-- **AgeNotWithinRangeException.java**: Custom exception for invalid student age (Q1).
-- **NameNotValidException.java**: Custom exception for invalid student name (Q1).
-- **Voter.java**: Implements the `Voter` class with age validation using exceptions (Q2).
-- **QuestionThree.java**: Handles weekday array with exception handling for invalid indices (Q3).
-- **QuestionFour.java**: Implements a HashMap for student names and grades with methods to add, remove, and display (Q4).
-- **QuestionFive.java**: Implements a stack for integers using collection classes with push, pop, and isEmpty methods (Q5).
-- **1.c.png, 1.d.png, 2.a.png, 2.b.png, 3.a.png, 3.b.png, 3.c.png, 4.a.png, 4.b.png, 4.c.png, 4.d.png, 5.png**: Screenshots of the code implementations for each task.
+## 📁 Project Structure
 
-## Tasks Overview
+```
+├── AgeNotWithinRangeException.java     # Custom exception for invalid student age
+├── NameNotValidException.java          # Custom exception for invalid name
+├── Student.java                        # Student class using custom exceptions (Q1)
+├── Voter.java                          # Voter class with age validation (Q2)
+├── QuestionThree.java                  # Weekday array + exception handling (Q3)
+├── QuestionFour.java                   # HashMap for student grades (Q4)
+├── QuestionFive.java                   # Stack implementation using collections (Q5)
+├── Screenshots/
+│   ├── 1.a.png 1.b.png 1.c.png 1.d.png
+│   ├── 2.a.png 2.b.png
+│   ├── 3.a.png 3.b.png 3.c.png
+│   ├── 4.a.png 4.b.png 4.c.png 4.d.png
+│   └── 5.png
+└── README.md
+```
 
-### Q1: Student Management System with Exception Handling
-- **Student Class**: Represents a student with attributes `rollNo`, `name`, `age`, and `course`, initialized via a parameterized constructor.
-- **Exceptions**:
-  - Throws `AgeNotWithinRangeException` if the age is not between 15 and 21.
-  - Throws `NameNotValidException` if the name contains numbers or special symbols.
-- Custom exception classes are defined to handle these scenarios.
+---
 
-### Q2: Voter Class with Age Validation
-- **Voter Class**: Contains attributes `voterId`, `name`, and `age`, initialized via a parameterized constructor.
-- Throws an exception (checked or unchecked) if the age is less than 18, with the message "invalid age for voter".
+## 🧩 Task Overviews
 
-### Q3: Weekday Array with Exception Handling
-- Stores weekday names in an array starting with "Sunday" at index 0.
-- Accepts a day position from the user and prints the corresponding day name.
-- Handles `ArrayIndexOutOfBoundsException` for indices outside the range 0-6, displaying a proper error message.
+### **Q1 — Student Management System (Custom Exceptions)**  
+Implements:
+- `Student` class with:
+  - `rollNo`, `name`, `age`, `course`
+- Custom exceptions:
+  - **AgeNotWithinRangeException** → age must be between **15–21**
+  - **NameNotValidException** → name must contain only letters
+- Validates input using constructor-based rules.
 
-### Q4: Student Grades HashMap
-- Uses a `HashMap` to store student names (keys) and grades (integer values).
-- Provides methods to:
-  - Add a new student and grade.
-  - Remove a student.
-  - Display a student’s grade by name.
+📸 **Screenshots:**  
+![1.c](1.c.png)  
+![1.d](1.d.png)
 
-### Q5: Stack Implementation with Collection Classes
-- Uses a collection class to store integers in a stack.
-- Implements methods to:
-  - Push elements onto the stack.
-  - Pop elements from the stack.
-  - Check if the stack is empty.
+---
 
-## How to Run
+### **Q2 — Voter Age Validation**  
+`Voter` class validates:
+- Age must be **18 or above**
+- Throws an exception for invalid age
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/thesoulseizure/task-4.git
-   ```
-2. **Navigate to the Project Directory**:
-   ```bash
-   cd task-4
-   ```
-3. **Compile the Java Files**:
-   ```bash
-   javac *.java
-   ```
-4. **Run the Desired Program**:
-   - For Q1: `java Student`
-   - For Q2: `java Voter`
-   - For Q3: `java QuestionThree`
-   - For Q4: `java QuestionFour`
-   - For Q5: `java QuestionFive`
+📸 **Screenshots:**  
+![2.a](2.a.png)  
+![2.b](2.b.png)
 
-## Requirements
+---
 
-- Java Development Kit (JDK) 8 or higher.
-- A terminal or IDE to compile and run Java programs.
+### **Q3 — Weekday Array + Exception Handling**  
+- Stores weekday names in an array (index 0 = Sunday)
+- Accepts user index input
+- Handles:
+  - **ArrayIndexOutOfBoundsException**
+  - Prints helpful error message
 
-## Screenshots
+📸 **Screenshots:**  
+![3.a](3.a.png)  
+![3.b](3.b.png)  
+![3.c](3.c.png)
 
-The repository includes screenshots (1.c.png to 5.png) that show the code implementations for each task. Refer to these images to view the solutions visually.
+---
+
+### **Q4 — Student Grades Using HashMap**  
+Implements:
+- Add student + grade  
+- Remove student  
+- Display grade by name  
+
+Uses Java **HashMap** to store key–value pairs.
+
+📸 **Screenshots:**  
+![4.a](4.a.png)  
+![4.b](4.b.png)  
+![4.c](4.c.png)  
+![4.d](4.d.png)
+
+---
+
+### **Q5 — Stack Implementation Using Collections**  
+Implements:
+- `push()`
+- `pop()`
+- `isEmpty()`
+
+Built using a Java **Stack** or similar collection class.
+
+📸 **Screenshot:**  
+![5](5.png)
+
+---
+
+## ▶️ How to Run
+
+### **1. Clone the Repository**
+```bash
+git clone https://github.com/thesoulseizure/task-4.git
+cd task-4
+```
+
+### **2. Compile All `.java` Files**
+```bash
+javac *.java
+```
+
+### **3. Run Any Task**
+
+| Task | Command |
+|------|----------|
+| Q1 — Student | `java Student` |
+| Q2 — Voter | `java Voter` |
+| Q3 — Weekday Array | `java QuestionThree` |
+| Q4 — HashMap Grades | `java QuestionFour` |
+| Q5 — Stack | `java QuestionFive` |
+
+---
+
+## 📌 Requirements
+- **JDK 8 or higher**
+- Any IDE or terminal that can compile and run Java programs
+
+---
+
+## 📄 License  
+This project is for **educational purposes** and demonstrates core Java error-handling & collections concepts.
+
+---
+
+
