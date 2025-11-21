@@ -162,12 +162,13 @@ Stack<Integer>
    javac *.java
     ```
 4. **Run the Desired Program**:
-   -'java Student'          # Q1
-   -'java Voter'            # Q2
-   -'java QuestionThree'    # Q3
-   -'java QuestionFour'     # Q4
-   -'java QuestionFive'     # Q5
-   
+   ```bash
+   'java Student'          # Q1
+   'java Voter'            # Q2
+   'java QuestionThree'    # Q3
+   'java QuestionFour'     # Q4
+   'java QuestionFive'     # Q5
+   ```
 
 ---
 
