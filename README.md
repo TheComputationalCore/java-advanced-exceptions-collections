@@ -149,18 +149,25 @@ Stack<Integer>
 
 ## ▶️ How to Run
 
-```bash
-git clone https://github.com/TheComputationalCore/java-advanced-exceptions-collections.git
-cd java-advanced-exceptions-collections
-javac *.java
-
-# Run tasks:
-java Student          # Q1
-java Voter            # Q2
-java QuestionThree    # Q3
-java QuestionFour     # Q4
-java QuestionFive     # Q5
-```
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/TheComputationalCore/java-advanced-exceptions-collections.git
+   ```
+2. **Navigate to the Project Directory**:
+   ```bash
+   cd java-advanced-exceptions-collections
+   ```
+3. **Compile the Java Files**:
+   ```bash
+   javac *.java
+    ```
+4. **Run the Desired Program**:
+   -'java Student'          # Q1
+   -'java Voter'            # Q2
+   -'java QuestionThree'    # Q3
+   -'java QuestionFour'     # Q4
+   -'java QuestionFive'     # Q5
+   
 
 ---
 
